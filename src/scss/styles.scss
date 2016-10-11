@@ -1,0 +1,94 @@
+$primary-color: #e9fa77;
+$primary-denote: #a3b90d;
+$secondary-color: #4dcaca;
+$secondary-denote: #00a6a6;
+
+//Letter colors
+.white{
+  color: white;
+}
+.secondary-denote{
+  color: $secondary-denote;
+}
+.secondary-color{
+  color: $secondary-color;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $primary-denote;
+}
+
+.liL {
+    float: left;
+    margin-bottom: 0px;
+}
+.liR {
+    float: right;
+    margin-bottom: 0px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: $primary-color;
+}
+
+.center{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: auto;
+
+}
+.txtCenter{
+  text-align: center;
+}
+.firstImage{
+  border-bottom: thick solid $secondary-color;
+
+}
+
+.cookingSection{
+  background-color: $secondary-color;
+}
+.cookingSection img{
+  margin-top: 20px;
+}
+
+.mainBlue{
+  padding-top: 10px;
+  background-color: $secondary-denote;
+  font-size: 1.5em
+
+}
+.mainTxt{
+  font-size: 2em;
+}
+svg text  {
+   font-size: 1em;
+   cursor:pointer;
+   fill: $primary-denote;
+}
+
+.icons{
+  font-family: FontAwesome;
+  font-size: 4em;
+
+}
+svg{
+  margin-top: 73;
+}
+.navIcons{
+  margin-top: 7px;
+}

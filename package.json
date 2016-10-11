@@ -1,0 +1,17 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.2",
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}
