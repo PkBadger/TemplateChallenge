@@ -13,13 +13,25 @@ $secondary-denote: #00a6a6;
 .secondary-color{
   color: $secondary-color;
 }
-
+//Background colors
+.secondary-colorBg{
+  background-color: $secondary-color;
+}
+.secondary-denoteBg{
+  background-color: $secondary-denote;
+}
+.primary-colorBg{
+  background-color: $primary-color;
+}
+.primary-denoteBg{
+  background-color: $primary-denote;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: $primary-denote;
+    background-color: #a3ba05;
 }
 
 .liL {
@@ -56,21 +68,31 @@ li a:hover {
 }
 .firstImage{
   border-bottom: thick solid $secondary-color;
-
+  width: 80%
 }
-
 .cookingSection{
   background-color: $secondary-color;
 }
-.cookingSection img{
+.cookingSection img, .restaurants img{
   margin-top: 20px;
+  width: 100%;
 }
-
-.mainBlue{
+.cookingSection p, .restaurants p{
+  font-size: 1.5em;
+}
+.mainBlue, .mainGreen{
   padding-top: 10px;
-  background-color: $secondary-denote;
+  height: 315px;
   font-size: 1.5em
-
+}
+.mainBlue{
+  background-color: $secondary-denote;
+}
+.mainGreen{
+  background-color: $primary-denote;
+}
+.restaurants{
+  background-color: $primary-color;
 }
 .mainTxt{
   font-size: 2em;
@@ -91,4 +113,52 @@ svg{
 }
 .navIcons{
   margin-top: 7px;
+}
+.specials h3{
+  height: 100px;
+}
+.specials img{
+  width: 100%;
+}
+//Margins
+.mb-less{
+  margin-bottom: 0px;
+}
+.mt-50{
+  margin-top: 50px;
+}
+.mt-15{
+  margin-top: 15px;
+}
+//Paddings
+.p-15{
+  padding: 15px;
+}
+//Guest Blogging posts
+.BlogTitle{
+  height: 100px;
+  font-size: 1.3em;
+}
+.BlogContent{
+  font-size: 1.3em;
+  height: 470px;
+}
+.BlogContent img{
+  width: 100%;
+}
+//Images overlay info
+.after {
+    font-size: 1.3em;
+    position: relative;
+    display: block;
+    background: rgba(0, 0, 0, .6);
+    margin-top: -100px;
+}
+//Svg resize
+.Icon {
+  width: 48px;
+}
+.Icon svg {
+  width: 80%;
+  height: auto;
 }
