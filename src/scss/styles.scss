@@ -2,7 +2,7 @@ $primary-color: #e9fa77;
 $primary-denote: #a3b90d;
 $secondary-color: #4dcaca;
 $secondary-denote: #00a6a6;
-
+$lg: 992px;
 //Letter colors
 .white{
   color: white;
@@ -26,13 +26,10 @@ $secondary-denote: #00a6a6;
 .primary-denoteBg{
   background-color: $primary-denote;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #a3ba05;
+.navColor{
+  background-color: #a3ba05;
 }
+
 
 .liL {
     float: left;
@@ -43,19 +40,37 @@ ul {
     margin-bottom: 0px;
 }
 
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00a6a6;
+}
+
+li {
+    float: left;
+}
+
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 0px 16px;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 1.3em;
 }
 
 /* Change the link color to #111 (black) on hover */
+li a span,div a span:hover {
+    color: $primary-color;
+}
 li a:hover {
     color: $primary-color;
 }
-
+li a i:hover {
+    color: $primary-color;
+}
 .center{
   display:block;
   margin-left:auto;
@@ -63,9 +78,7 @@ li a:hover {
   width: auto;
 
 }
-.txtCenter{
-  text-align: center;
-}
+
 .firstImage{
   border-bottom: thick solid $secondary-color;
   width: 80%
@@ -75,14 +88,18 @@ li a:hover {
 }
 .cookingSection img, .restaurants img{
   margin-top: 20px;
-  width: 100%;
+  width: 90%;
 }
 .cookingSection p, .restaurants p{
   font-size: 1.5em;
 }
+.restaurants div{
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .mainBlue, .mainGreen{
   padding-top: 10px;
-  height: 315px;
+  height: 345px;
   font-size: 1.5em
 }
 .mainBlue{
@@ -93,6 +110,11 @@ li a:hover {
 }
 .restaurants{
   background-color: $primary-color;
+}
+@media only screen and (max-width: $lg){
+    .mainGreen{
+      margin-top: 15px;
+    }
 }
 .mainTxt{
   font-size: 2em;
@@ -110,6 +132,7 @@ svg text  {
 }
 svg{
   margin-top: 73;
+  margin-bottom: 73;
 }
 .navIcons{
   margin-top: 7px;
@@ -119,40 +142,82 @@ svg{
 }
 .specials img{
   width: 100%;
+  margin-bottom: 25px;
 }
+.specials div{
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
 //Margins
+section{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .mb-less{
   margin-bottom: 0px;
+}
+.mt-less{
+  margin-top: 0px;
+}
+.mb-15{
+  margin-bottom: 15px;
 }
 .mt-50{
   margin-top: 50px;
 }
+.mt-70{
+  margin-top: 70px
+}
 .mt-15{
   margin-top: 15px;
+}
+.ml-15{
+  margin-left: 15px;
+}
+//Text Properties
+.fontM{
+  font-size: 1.3em;
+}
+.txtCenter{
+  text-align: center;
+}
+.txtJust{
+  text-align: justify;
+}
+p,h1,h2,h3,h4,li,text{
+  font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
 }
 //Paddings
 .p-15{
   padding: 15px;
 }
+.pb-15{
+  padding-bottom: 15px;
+}
 //Guest Blogging posts
 .BlogTitle{
   height: 100px;
-  font-size: 1.3em;
+
 }
 .BlogContent{
-  font-size: 1.3em;
-  height: 470px;
+
+  height: 500px;
 }
 .BlogContent img{
   width: 100%;
 }
 //Images overlay info
 .after {
-    font-size: 1.3em;
+    font-size: .9em;
     position: relative;
     display: block;
+    width: 90%;
+
     background: rgba(0, 0, 0, .6);
-    margin-top: -100px;
+    margin-top: -68px;
 }
 //Svg resize
 .Icon {
@@ -161,4 +226,11 @@ svg{
 .Icon svg {
   width: 80%;
   height: auto;
+}
+//footer
+footer{
+  margin-top: 15px;
+  padding-top: 15px;
+  background-color: #00a6a6;
+  padding-bottom: 15px;
 }

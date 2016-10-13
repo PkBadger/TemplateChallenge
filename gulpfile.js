@@ -19,6 +19,12 @@ gulp.task('html',function(){
   .pipe(gulp.dest('build/'))
 
 });
+//img task
+gulp.task('html',function(){
+  gulp.src('src/img/*.png')
+  .pipe(gulp.dest('build/img'))
+
+});
 
 // Styles task
 // Ugilifies

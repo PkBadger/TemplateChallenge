@@ -5,37 +5,43 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://use.fontawesome.com/b8f4b1f15a.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <i class="fa fa-pagelines fa-2x white fa-rotate-180 navIcons" aria-hidden="true"></i>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid navColor">
 
-        </a>
-        <i class="fa fa-search fa-2x white navIcons navbar-text navbar-right" aria-hidden="true"></i>
+          <div class="navbar-header">
+            <a class="navbar-brand white" href="#">
+              <i class="fa fa-pagelines white fa-rotate-180 navIcons" aria-hidden="true"></i>
+              <span class="white fontM">Gi.La</span>
+            </a>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-menubuilder">
+              <ul class="nav navbar-nav navbar-right">
+
+                  <li><a href="#" ><span class="white">Recipes</span></a>
+                  </li>
+                  <li><a href="#"><span class="white">Gallery</span></a>
+                  </li>
+                  <li><a href="#"><span class="white">Contact</span></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-search white navIcons mt-less" aria-hidden="true"></i></a></li>
+              </ul>
+          </div>
       </div>
-    </div>
-  </nav>
+  </div>
   <div class="container-fluid">
-
-    <div class="row">
-      <ul>
-        <li class="LiL"><i class="fa fa-pagelines fa-2x white fa-rotate-180 navIcons" aria-hidden="true"></i></li>
-        <li class="liL"><a href="index.html"><h4>Gi.la</h4></a></li>
-        <li class="LiR"><i class="fa fa-search fa-2x white navIcons" aria-hidden="true"></i></li>
-        <li class="LiR"><a href="about.asp"><h4>Contact</h4></a></li>
-        <li class="LiR"><a href="contact.asp"><h4>Gallery</h4></a></li>
-        <li class="LiR"><a href="news.asp"><h4>Recipes</h4></a></li>
-      </ul>
-   </div>
 
     <div class="row">
       <div class="col-xs-12 col-md-6">
         <img class="center firstImage" src="img/img-chef.png"/>
         <h1 class="txtCenter secondary-denote">Gila De Lauren</h1>
-        <p class="txtCenter ">She id an Italian-born American chef,writer,television personality, and the host of the current Food Network television program Food Paradise</p>
+        <p class="txtCenter fontM">She is an Italian-born American chef,writer,television personality, and the host of the current Food Network television program Food Paradise</p>
 
       </div>
 
@@ -43,7 +49,7 @@
         <svg viewbox="0 0 400 400" class="center" width="400" height="400">
           <circle cx="200" cy="200" r="200" fill="#e9fa77" />
           <circle cx="200" cy="200" r="50" fill="#fff" />
-          <g><text x="90" y="110" class="icons" onclick="alert('click!')" fill="green">&#xf0e0;</text></g>
+          <g><text x="90" y="110" class="icons"  fill="green">&#xf0e0;</text></g>
           <text x="70" y="130" fill="green">NEWSLETTER</text>
           <g><text x="60" y="270" class="icons" >&#xf15c;</text></g>
           <text x="65" y="295" fill="green" >READ</text>
@@ -63,31 +69,31 @@
 
     <section class="row cookingSection">
       <div class="col-xs-12 col-md-3 col-sm-12 mainBlue">
-        <div class="txtCenter mt-50">
+        <div class="txtCenter mt-70">
           <i class="fa fa-shopping-basket fa-5x white" aria-hidden="true"></i>
           <p class="white mainTxt">Let's get cooking!</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-3 col-sm-4">
         <img class="center" src="img/img-deviled-eggs.png"/>
-        <p class="white">Bar Americain's Pickled Shrimp Deviled Eggs with Cornichon Remoulade</p>
+        <p class="white mt-15">Bar Americain's Pickled Shrimp Deviled Eggs with Cornichon Remoulade</p>
       </div>
 
       <div class="col-xs-12 col-md-3 col-sm-4">
         <img class="center" src="img/img-roulade-cover.png"/>
-        <p class="white">Turkey Roulade with "Stovetop"Stufffing</p>
+        <p class="white mt-15">Turkey Roulade with "Stovetop" Stufffing</p>
       </div>
       <div class="col-xs-12 col-md-3 col-sm-4">
         <img class="center" src="img/img-fresh-tomato-sauce-cover.png"/>
-        <p class="white"> Pasta with Fresh Tomato Sauce</p>
+        <p class="white mt-15"> Pasta with Fresh Tomato Sauce</p>
       </div>
     </section>
     <section class="Specials row">
-      <h1>Special of this Season</h1>
+      <h1 class="ml-15">Special of this Season</h1>
       <div class="col-xs-12 col-md-4">
           <h3 class="secondary-denote">Barbeque: Cali Style</h3>
           <img class="center" src="img/img-the-ingredients-cover.png"/>
-          <p>You've undoubtedly heard of Carolina Barbeque and Texas BBQ
+          <p class="fontM txtJust">You've undoubtedly heard of Carolina Barbeque and Texas BBQ
             but have you ever tried Santa Maria Barbeque? Unlike the
             aforementioned styles, Santa Maria Barbeque doesn't involve a long,
             slow cooking method of sweer sauces, but is instead a menu featuring
@@ -99,7 +105,7 @@
       <div class="col-xs-12 col-md-4">
         <h3 class="secondary-denote">The Perfect Fruitcake</h3>
         <img class="center" src="img/img-fruitcake-cover.png"/>
-        <p>The poor, maligned fruit cake... probably one of the most
+        <p class="fontM txtJust">The poor, maligned fruit cake... probably one of the most
           hated caked in the existence of baking. Is it any wonder? would
           you want an incredibly dense, overly sweet, horribly boozy "cake"
           chock-full of fluorescent-colored candied fruit pieces?
@@ -108,7 +114,7 @@
       <div class="col-xs-12 col-md-4">
         <h3 class="secondary-denote">Spice-Crusted Salmon: A HolidayDinner That's As Impressive As It Is Quick</h3>
         <img class="center" src="img/img-salmon-cover.png"/>
-        <p>Holiday season is well underway, and you know what than means: people
+        <p class="fontM txtJust">Holiday season is well underway, and you know what than means: people
           are BUSY! With that in mind, I developed a festive recipe that's
           quick enough to serve on a weeknight(with some make-aheads), and
           beautiful and impressive enoufh to serve as the centerpiece
@@ -121,37 +127,37 @@
       <div class="col-xs-12 col-md-3 col-sm-4">
         <p class="mt-15"> DELI BAR</p>
         <img class="center" src="img/img-restaurante-1.png"/>
-          <div class="after white">156 Lafayette Street<br> New York, NY 10012<br> 214 677 6400 <br>delibar.com</div>
+          <div class="after center white">156 Lafayette Street<br> New York, NY 10012<br> 214 677 6400 <br>delibar.com</div>
       </div>
 
       <div class="col-xs-12 col-md-3 col-sm-4">
         <p class="mt-15">BAR NEW YORK</p>
         <img class="center" src="img/img-restaurant-2.png"/>
-          <div class="after white">756 W. 52nd Street<br> New York, NY 10019<br> 214 265 8900 <br>bar-new-york.com</div>
+          <div class="after center white">756 W. 52nd Street<br> New York, NY 10019<br> 214 265 8900 <br>bar-new-york.com</div>
       </div>
 
       <div class="col-xs-12 col-md-3 col-sm-4">
         <p class="mt-15"> BAR TOKIO SUN</p>
-        <img class="center" src="img/img-restaurant-3.png"/>
-          <div class="after white">11 Mohegan Sun Boulevard<br>Uncasville, CT 06382<br> 756 862 3529 <br>tokiosun.com</div>
+        <img class="center " src="img/img-restaurant-3.png"/>
+          <div class="after center white">11 Mohegan Sun Boulevard<br>Uncasville, CT 06382<br> 756 862 3529 <br>tokiosun.com</div>
       </div>
       <div class="col-xs-12 col-md-3 col-sm-12 mainGreen">
-        <div class="txtCenter mt-50">
+        <div class="txtCenter mt-70">
           <i class="fa fa-cutlery fa-5x white" aria-hidden="true"></i>
           <p class="white mainTxt">restaurants</p>
         </div>
       </div>
     </section>
     <section class="blogging row">
-      <h1>Guest Blogging</h1>
+      <h1 class="mb-15 ml-15">Guest Blogging</h1>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="primary-denoteBg BlogTitle">
-          <p class="white  mb-less p-15">
+          <p class="white  mb-less p-15 fontM">
             Rhubarb: The Vegetable That Acts Like a Fruit
           </p>
         </div>
         <div class="primary-colorBg BlogContent">
-          <p class="p-15">
+          <p class="p-15 fontM txtJust">
             May is all about vegetables on bobbyflay.com
             and one of the most popular springtime vegetables is rhubarb.
             That's right, I said vegetable. Did you know that thubarb is
@@ -168,13 +174,13 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="secondary-denoteBg BlogTitle">
-          <p class="white  mb-less p-15">
+          <p class="white  mb-less p-15 fontM">
             Spice-Crusted Salmon: A Holiday Dinner
             That's As Impressive As It Is Quick
           </p>
         </div>
         <div class="secondary-colorBg BlogContent">
-          <p class="p-15">
+          <p class="p-15 fontM txtJust">
             Holiday season is well underway, and you know what than means: people
               are BUSY! With that in mind, I developed a festive recipe that's
               quick enough to serve on a weeknight(with some make-aheads), and
@@ -190,13 +196,13 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class=" BlogTitle">
-          <p class="secondary-denote  mb-less p-15">
+          <p class="secondary-denote  mb-less p-15 fontM">
             A New Favorite Take on an Old Mediterranean Grain
           </p>
         </div>
         <div class=" BlogContent">
           <img class="center" src="img/img-eggplant-manchego-salad-cover.png"/>
-          <p class="p-15">
+          <p class="p-15 fontM txtJust">
             packed with complex carbohydrates and fiber, delicious and hearty
             whole grains play an important part in the mediterranean diet. Look
             beyond rice and pasta, becaise it's worth getting to jnow farro,
@@ -206,8 +212,17 @@
         </div>
       </div>
     </section>
-    <p class="mt-20"> Some images of this example were taken from http://bobbyflay.com. All reserver rights</p>
+    <p class="mt-15"> Some images of this example were taken from http://bobbyflay.com. All reserver rights</p>
+
   </div>
+  <footer>
+    <ul>
+      <li class="white"><a>Contact</a></li>
+      <li class="white"><a>Bio</a></li>
+      <li class="white"><a>Press</a></li>
+      <li class="white liR"><a>&#169; 2016 website.com</a></li>
+    </ul>
+  </footer>
 
 
 </body>
