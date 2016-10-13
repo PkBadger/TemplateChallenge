@@ -13,14 +13,14 @@ gulp.task('scripts',function(){
 });
 
 // Html task
-// Uglifies
+
 gulp.task('html',function(){
   gulp.src('src/*.html')
   .pipe(gulp.dest('build/'))
 
 });
 //img task
-gulp.task('html',function(){
+gulp.task('img',function(){
   gulp.src('src/img/*.png')
   .pipe(gulp.dest('build/img'))
 
@@ -47,6 +47,7 @@ gulp.task('watch',function(){
   gulp.watch('src/js/*.js',['scripts']);
   gulp.watch('src/scss/**/*.scss',['styles']);
   gulp.watch('src/*.html',['html']);
+  gulp.watch('src/img/*png',['img']);
 });
 
-gulp.task('default',['scripts','styles','html','watch']);
+gulp.task('default',['scripts','styles','html','img','watch']);
