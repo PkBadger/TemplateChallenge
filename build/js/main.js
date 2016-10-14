@@ -1,1 +1,1 @@
-var x=56,y=34;console.log(x+y),console.log(Y),console.log(x),console.log(Y),console.log(Y);
+var miAngularApp=angular.module("App",[]);miAngularApp.controller("BlogCtrl",["$http","$scope",function(o,t){function l(o){t.posts=o.data}function n(o){console.log(o)}t.posts={},o.get("http://localhost:8080").then(l,n)}]);
