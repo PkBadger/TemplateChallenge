@@ -3,10 +3,12 @@ $primary-denote: #a3b90d;
 $secondary-color: #4dcaca;
 $secondary-denote: #00a6a6;
 $lg: 992px;
+
 //Letter colors
 .white{
   color: white;
 }
+
 .secondary-denote{
   color: $secondary-denote;
 }
@@ -86,11 +88,11 @@ li a i:hover {
 .cookingSection{
   background-color: $secondary-color;
 }
-.cookingSection img, .restaurants img{
+.cookingimg, .restaurantsimg{
   margin-top: 20px;
   width: 90%;
 }
-.cookingSection p, .restaurants p{
+.cookingp, .restaurantsp{
   font-size: 1.5em;
 }
 .restaurants div{
