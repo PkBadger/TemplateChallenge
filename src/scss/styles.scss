@@ -4,75 +4,10 @@ $secondary-color: #4dcaca;
 $secondary-denote: #00a6a6;
 $lg: 992px;
 
-//Letter colors
-.white{
-  color: white;
-}
-
-.secondary-denote{
-  color: $secondary-denote;
-}
-.secondary-color{
-  color: $secondary-color;
-}
-//Background colors
-.secondary-colorBg{
-  background-color: $secondary-color;
-}
-.secondary-denoteBg{
-  background-color: $secondary-denote;
-}
-.primary-colorBg{
-  background-color: $primary-color;
-}
-.primary-denoteBg{
-  background-color: $primary-denote;
-}
-.navColor{
-  background-color: #a3ba05;
-}
-
-
-.liL {
-    float: left;
-    margin-bottom: 0px;
-}
-.liR {
-    float: right;
-    margin-bottom: 0px;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #00a6a6;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.3em;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a span,div a span:hover {
-    color: $primary-color;
-}
-li a:hover {
-    color: $primary-color;
-}
-li a i:hover {
-    color: $primary-color;
-}
+/////////////////////////////
+// General                //
+///////////////////////////
+//Center images
 .center{
   display:block;
   margin-left:auto;
@@ -80,78 +15,21 @@ li a i:hover {
   width: auto;
 
 }
-
-.firstImage{
-  border-bottom: thick solid $secondary-color;
-  width: 80%;
+//Text Properties
+.fontM{
+  font-size: 1.3em;
 }
-.cookingSection{
-  background-color: $secondary-color;
+.txtCenter{
+  text-align: center;
 }
-.cookingimg, .restaurantsimg{
-  margin-top: 20px;
-  width: 90%;
+.txtJust{
+  text-align: justify;
 }
-.cookingp, .restaurantsp{
-  font-size: 1.5em;
+//Font
+p,h1,h2,h3,h4,li,text{
+  font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
 }
-.restaurants div{
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.mainBlue, .mainGreen{
-  padding-top: 10px;
-  height: 345px;
-  font-size: 1.5em;
-}
-.mainBlue{
-  background-color: $secondary-denote;
-}
-.mainGreen{
-  background-color: $primary-denote;
-}
-.restaurants{
-  background-color: $primary-color;
-}
-@media only screen and (max-width: $lg){
-    .mainGreen{
-      margin-top: 15px;
-    }
-}
-.mainTxt{
-  font-size: 2em;
-}
-svg text  {
-   font-size: 1em;
-   cursor:pointer;
-   fill: $primary-denote;
-}
-
-.icons{
-  font-family: FontAwesome;
-  font-size: 4em;
-
-}
-svg{
-  margin-top: 73px;
-  margin-bottom: 73px;
-}
-.navIcons{
-  margin-top: 7px;
-}
-.specials h3{
-  height: 100px;
-}
-.specials img{
-  width: 100%;
-  margin-bottom: 25px;
-}
-.specials div{
-  padding-left: 40px;
-  padding-right: 40px;
-
-}
-
 //Margins
 section{
   margin-top: 40px;
@@ -178,20 +56,6 @@ section{
 .ml-15{
   margin-left: 15px;
 }
-//Text Properties
-.fontM{
-  font-size: 1.3em;
-}
-.txtCenter{
-  text-align: center;
-}
-.txtJust{
-  text-align: justify;
-}
-p,h1,h2,h3,h4,li,text{
-  font-family: 'Roboto', sans-serif;
-  color: #4a4a4a;
-}
 //Paddings
 .p-15{
   padding: 15px;
@@ -199,19 +63,150 @@ p,h1,h2,h3,h4,li,text{
 .pb-15{
   padding-bottom: 15px;
 }
-//Guest Blogging posts
-.BlogTitle{
-  height: 100px;
+//Letter colors
+.white{
+  color: white;
+}
+
+.secondary-denote{
+  color: $secondary-denote;
+}
+.secondary-color{
+  color: $secondary-color;
+}
+
+//Background colors
+.secondary-colorBg{
+  background-color: $secondary-color;
+}
+.secondary-denoteBg{
+  background-color: $secondary-denote;
+}
+.primary-colorBg{
+  background-color: $primary-color;
+}
+.primary-denoteBg{
+  background-color: $primary-denote;
+}
+/////////////////////////////////////////
+// Navigation bar and footer bar     //
+///////////////////////////////////////
+.navColor{
+  background-color: #a3ba05;
+}
+
+.liL {
+    float: left;
+    margin-bottom: 0px;
+}
+.liR {
+    float: right;
+    margin-bottom: 0px;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00a6a6;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+li a span,div a span:hover {
+    color: $primary-color;
+}
+li a:hover {
+    color: $primary-color;
+}
+li a i:hover {
+    color: $primary-color;
+}
+//footer
+footer{
+  margin-top: 15px;
+  padding-top: 15px;
+  background-color: #00a6a6;
+  padding-bottom: 15px;
+}
+
+///////////////////////////////
+// First Part(chef and svg) //
+/////////////////////////////
+.firstImage{
+  border-bottom: thick solid $secondary-color;
+  width: 80%;
+}
+//Svg resize
+.Icon svg {
+  width: 80%;
+  height: auto;
+}
+svg text  {
+   font-size: 1em;
+   cursor:pointer;
+   fill: $primary-denote;
+}
+
+.icons{
+  font-family: FontAwesome;
+  font-size: 4em;
 
 }
-.BlogContent{
-
-  height: 500px;
+svg{
+  margin-top: 73px;
+  margin-bottom: 73px;
 }
-.BlogContent img{
-  width: 100%;
+////////////////////////////////////////////
+// Let's get cooking and restaurant parts//
+//////////////////////////////////////////
+.cookingSection{
+  background-color: $secondary-color;
 }
-//Images overlay info
+.cookingimg, .restaurantsimg{
+  margin-top: 20px;
+  width: 90%;
+}
+.cookingp, .restaurantsp{
+  font-size: 1.5em;
+}
+.restaurants div{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+//Header of the part
+.mainBlue, .mainGreen{
+  padding-top: 10px;
+  height: 345px;
+  font-size: 1.5em;
+}
+.mainBlue{
+  background-color: $secondary-denote;
+}
+.mainGreen{
+  background-color: $primary-denote;
+}
+@media only screen and (max-width: $lg){
+    .mainGreen{
+      margin-top: 15px;
+    }
+}
+.restaurants{
+  background-color: $primary-color;
+}
+//Header text
+.mainTxt{
+  font-size: 2em;
+}
+//Text overlay on restaurant
 .after {
     font-size: .9em;
     position: relative;
@@ -221,18 +216,31 @@ p,h1,h2,h3,h4,li,text{
     background: rgba(0, 0, 0, .6);
     margin-top: -68px;
 }
-//Svg resize
-.Icon {
-  width: 48px;
+
+/////////////////////////////
+// Specials section       //
+///////////////////////////
+.specials h3{
+  height: 100px;
 }
-.Icon svg {
-  width: 80%;
-  height: auto;
+.specials img{
+  width: 100%;
+  margin-bottom: 25px;
 }
-//footer
-footer{
-  margin-top: 15px;
-  padding-top: 15px;
-  background-color: #00a6a6;
-  padding-bottom: 15px;
+.specials div{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+//////////////////////////
+//Guest Blogging posts //
+////////////////////////
+.BlogTitle{
+  height: 100px;
+
+}
+.BlogContent{
+  height: 500px;
+}
+.BlogContent img{
+  width: 100%;
 }
